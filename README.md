@@ -1,4 +1,6 @@
 # vivarihome - backend
 
-# TO RUN:
-# node index.js
+### TO RUN:
+```
+node index.js
+```
