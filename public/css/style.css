@@ -1,0 +1,149 @@
+html {
+    font-family: 'Passion One', 
+    cursive;
+    font-size: 10px;
+    color: rgb(236, 32, 90);
+    letter-spacing: 3px;
+}
+
+h1 {
+    font-size: 15vh;
+    text-align: center;
+}
+
+p,
+li {
+    font-size: 4vh;
+    letter-spacing: 1px;
+}
+
+body {
+    background-color: rgb(25, 25, 25);
+    margin: 0;
+}
+
+table,
+th,
+td {
+    border-collapse: collapse;
+    font-size: 3vw;
+    letter-spacing: 1px;
+    text-shadow: 5px 5px 0px black;
+    white-space: nowrap;
+    table-layout: fixed;
+}
+
+th,
+td {
+    padding: 5px;
+    text-align: left;
+    width: 15vw;
+}
+
+td + td {
+    width: auto;
+}
+
+button {
+    padding: 1em 2.1em 1.1em;
+    border-radius: 3px;
+    margin: 8px 8px 8px 8px;
+    color: #000000;
+    display: inline-block;
+    background: rgb(236, 32, 90);
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    font-family: sans-serif;
+    font-weight: 800;
+    font-size: .30em;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    -webkit-box-shadow: 0em -0.3rem 0em rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0em -0.3rem 0em rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0em -0.3rem 0em rgba(0, 0, 0, 0.1) inset;
+    position: relative;
+    border-radius: 50em !important;
+}
+button:hover, button:focus {
+    opacity: 0.8;
+}
+button:active {
+    -webkit-transform: scale(0.80);
+    -moz-transform: scale(0.80);
+    -ms-transform: scale(0.80);
+    -o-transform: scale(0.80);
+    transform: scale(0.80);
+}
+
+#Vivarihome {
+    position: fixed;
+    top: -7%;
+    left: 3%;
+    text-shadow: 7px 7px 0px black;
+}
+
+#Data {
+    position: fixed;
+    top: 20%;
+    left: 5%;
+}
+
+#Data2 {
+    position: fixed;
+    top: 20%;
+    left: 35%;
+}
+
+@media only screen and (device-width: 414px) 
+        and (device-height: 896px) 
+        and (-webkit-device-pixel-ratio: 2) {
+    h1 {
+        font-size: 9vh;
+        text-align: center;
+    }
+
+    table,
+    th,
+    td {
+        border-collapse: collapse;
+        font-size: 4vh;
+        letter-spacing: 1px;
+        text-shadow: 5px 5px 0px black;
+        white-space: nowrap;
+        table-layout: fixed;
+    }
+
+    th,
+    td {
+        padding: 5px;
+        text-align: left;
+        width: 200px;
+    }
+
+    td + td {
+        width: auto;
+    }
+
+    #Vivarihome {
+        position: fixed;
+        top: -5%;
+        left: 5%;
+        text-shadow: 7px 7px 0px black;
+    }
+
+    #Data {
+        position: fixed;
+        top: 12%;
+        left: 5%;
+    }
+
+    #Data2 {
+        position: fixed;
+        top: 52%;
+        left: 5%;
+        font-size: 3vh;
+    }
+}

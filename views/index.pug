@@ -1,0 +1,53 @@
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1, minimum-scale=.5, maximum-scale=1, user-scalable=0')
+  title Vivarihome
+  link(rel='stylesheet' type='text/css' href='/css/style.css')
+  link(href='https://fonts.googleapis.com/css2?family=Passion+One&display=swap' rel='stylesheet')
+h1#Vivarihome Vivarihome
+table#Data(style='width:30%')
+  //tr
+  //  td Probe 1:
+  //  td #{temp1}&deg;F
+  //tr
+  //  td Probe 2:
+  //  td #{temp2}&deg;F
+  tr
+    td Probe 3:
+    td #{temp3}&deg;F
+  tr
+    td Probe 4:
+    td #{temp4}&deg;F
+  tr
+    td Probe 5:
+    td #{temp5}&deg;F
+  tr
+    td Humidity:
+    td #{dhtHum}%
+table#Data2(style='width:30%')
+  tr
+    td The left door is #{leftDoor}.
+  tr
+    td The right door is #{rightDoor}.
+  tr 
+    td UVB Lamp 
+    th
+      button(onclick='buttonClickedUV()') Toggle UVB
+  tr 
+    td Misting Pump 
+    th
+      button(onclick='buttonClickedMist()') Toggle Mist
+  tr 
+    td Mister: 
+    td #{mistLevel} in
+script(src='/socket.io/socket.io.js')
+script.
+  var socket = io.connect();
+
+  function buttonClickedUV() {
+    socket.emit('toggleUV');
+  }
+
+  function buttonClickedMist() {
+    socket.emit('toggleMister');
+  }

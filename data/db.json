@@ -1,0 +1,7 @@
+{
+    "readings": [
+        { "temp3": 80, "temp4": 90, "temp5": 100, "dhtHum": 85, "mistLevel": 50, "doorsOpen": 0 },
+        { "temp3": 81, "temp4": 91, "temp5": 101, "dhtHum": 86, "mistLevel": 51, "doorsOpen": 1 },
+        { "temp3": 82, "temp4": 92, "temp5": 102, "dhtHum": 87, "mistLevel": 52, "doorsOpen": 0 }
+    ]
+}
